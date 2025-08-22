@@ -1,2 +1,4 @@
-pudl-ferc6-data/
+.ipynb_checkpoints
 ferc6_xbrl.sqlite
+pudl-ferc6-data/
+ferc-exports/
