@@ -2,3 +2,7 @@
 ferc6_xbrl.sqlite
 pudl-ferc6-data/
 ferc-exports/
+scratphad/
+output/
+__pycache__/
+backups/
