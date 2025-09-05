@@ -10,9 +10,10 @@ import pandas as pd
 # Extract the Income Statement
 def get_ferc6_income_statement(db_file, subject_id):
     '''
-    Extract the income statement out of a PUDL FERC Form 6 SQL file. Available at:
-    https://s3.us-west2.amazonaws.com/pudl.catalyst.coop/nightly/ferc2_xbrl.sqlite.zip
-
+    Extract the Income Statement out of a PUDL FERC Form 6 SQLite file.
+    See the SQLite datasette section at:
+    https://catalystcoop-pudl.readthedocs.io/en/latest/data_access.html
+    
     Parameters:
         db_file (object): Path to PUDL FERC Form 6 sqlite database file
         subject_id (string): the entity_id to filter the database by
@@ -77,8 +78,9 @@ def get_ferc6_income_statement(db_file, subject_id):
 # Extract the Balance Sheet
 def get_ferc6_balance_sheet(db_file, subject_id):
     '''
-    Extract the balance sheet out of a PUDL FERC Form 6 SQL file. Available at:
-    https://s3.us-west2.amazonaws.com/pudl.catalyst.coop/nightly/ferc2_xbrl.sqlite.zip
+    Extract the Balance Sheet out of a PUDL FERC Form 6 SQLite file.
+    See the SQLite datasette section at:
+    https://catalystcoop-pudl.readthedocs.io/en/latest/data_access.html
 
     Parameters:
         db_file (object): Path to PUDL FERC Form 6 sqlite database file
@@ -189,8 +191,9 @@ def get_ferc6_balance_sheet(db_file, subject_id):
 # Extract the Cash Flow Statement
 def get_ferc6_cash_flow_statement(db_file, subject_id):
     '''
-    Extract the Statement of Cash Flows out of a PUDL FERC Form 6 SQL file. Available at:
-    https://s3.us-west2.amazonaws.com/pudl.catalyst.coop/nightly/ferc2_xbrl.sqlite.zip
+    Extract the Statement of Cash FLows out of a PUDL FERC Form 6 SQLite file.
+    See the SQLite datasette section at:
+    https://catalystcoop-pudl.readthedocs.io/en/latest/data_access.html
 
     Parameters:
         db_file (object): Path to PUDL FERC Form 6 sqlite database file
