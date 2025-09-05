@@ -200,7 +200,7 @@ def get_ferc6_cash_flow_statement(db_file, subject_id):
         subject_id (string): the entity_id to filter the database by
 
     Returns:
-        DataFrame (object): A Pandas DataFrame of the filtered Balance Sheet
+        DataFrame (object): A Pandas DataFrame of the filtered Statement of Cash Flows
     '''
     # Connect to the sql database using sqlite3
     conn = sqlite3.connect(db_file)
