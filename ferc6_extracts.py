@@ -1,5 +1,6 @@
 '''
-This file contains functions to extract FERC Form 6 schedules and statements from PUDL sqlite file.
+This file contains functions to extract FERC Form 6 schedules and statements from a 
+PUDL ferc6_xbrl.sqlite database.
 '''
 
 import sqlite3
@@ -7,7 +8,7 @@ import pandas as pd
 
 
 # Extract the Income Statement
-def get_income_statement(db_file, subject_id):
+def get_ferc6_income_statement(db_file, subject_id):
     '''
     Extract the income statement out of a PUDL FERC Form 6 SQL file. Available at:
     https://s3.us-west2.amazonaws.com/pudl.catalyst.coop/nightly/ferc2_xbrl.sqlite.zip
@@ -74,7 +75,7 @@ def get_income_statement(db_file, subject_id):
     return df
 
 # Extract the Balance Sheet
-def get_balance_sheet(db_file, subject_id):
+def get_ferc6_balance_sheet(db_file, subject_id):
     '''
     Extract the balance sheet out of a PUDL FERC Form 6 SQL file. Available at:
     https://s3.us-west2.amazonaws.com/pudl.catalyst.coop/nightly/ferc2_xbrl.sqlite.zip
@@ -186,7 +187,7 @@ def get_balance_sheet(db_file, subject_id):
     return df
 
 # Extract the Cash Flow Statement
-def get_cash_flow_statement(db_file, subject_id):
+def get_ferc6_cash_flow_statement(db_file, subject_id):
     '''
     Extract the Statement of Cash Flows out of a PUDL FERC Form 6 SQL file. Available at:
     https://s3.us-west2.amazonaws.com/pudl.catalyst.coop/nightly/ferc2_xbrl.sqlite.zip
